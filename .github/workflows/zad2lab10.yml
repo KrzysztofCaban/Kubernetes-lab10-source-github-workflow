@@ -41,6 +41,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
+        platforms: linux/amd64,linux/arm64
         push: true
         tags: kcaban99/lab10-app:${{ steps.vars.outputs.version_number}}
         
